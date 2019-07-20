@@ -1,0 +1,14 @@
+@import "base";
+
+
+@function sasstom-width-value-mapping($start, $end, $unit) {
+  $result: ();
+  @for $i from $start through $end {
+    $result: map-merge($result, ($i: $i * $unit));
+  }
+  @return $result;
+}
+
+@mixin sasstom-width($shorthand: "w", $separator: "-", $value-mapping: sasstom-width-value-mapping(1, 8, 0.25rem)) {
+  @include sasstom-single-value-property("width", $shorthand, $separator, $value-mapping)
+}

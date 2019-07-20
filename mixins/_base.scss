@@ -1,0 +1,7 @@
+@mixin sasstom-single-value-property($property, $shorthand, $separator, $value-mapping) {
+  @each $name, $value in $value-mapping {
+    .#{$shorthand}#{$separator}#{$name} {
+      #{$property}: #{$value}
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "sasstom",
+  "version": "0.0.1.alpha",
+  "license": "Apache-2.0",
+  "scripts": {
+    "publish": ""
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
